@@ -1,0 +1,159 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usepackage{textcomp}
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=14.935in,
+height=8.158in,
+at={(2.505in,1.101in)},
+scale only axis,
+xmin=1,
+xmax=7,
+xtick={1,2,3,4,5,6,7},
+xticklabels={{$\sigma$},{$\text{2}\sigma$},{$\text{3}\sigma$},{$\text{4}\sigma$},{$\text{5}\sigma$},{$\text{6}\sigma$},{$\text{7}\sigma$}},
+xlabel style={font=\color{white!15!black}},
+xlabel={Threshold},
+ymode=log,
+ymin=0.000544069640914037,
+ymax=0.0309014267185473,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BER},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+grid style={line width=0.3pt, draw=gray!20},
+legend style={legend pos = south east, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+1 	0.00413492927094668\\
+2	0.00165941240478781\\
+3	0.000897714907508161\\
+4	0.00130576713819369\\
+5	0.00231229597388466\\
+6	0.00242110990206746\\
+7	0.00552230685527748\\
+%8	0.0073177366702938\\
+%9	0.00851468988030468\\
+};
+\addlegendentry{One User Case}
+
+\addplot [color=black, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=black, black}]
+table[row sep=crcr]{%
+	1	0.00556199304750869\\
+	2	0.0029837775202781\\
+	3	0.00275202780996524\\
+	4	0.00353418308227115\\
+	5	0.00286790266512167\\
+	6	0.00370799536500579\\
+	7	0.00396871378910776\\
+%	8	0.00640208574739282\\
+%	9	0.0149478563151796\\
+};
+\addlegendentry{Two Users Case}
+
+%\addplot [color=red, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=red, red}]
+%table[row sep=crcr]{%
+%	1	0.0206724782067248\\
+%	2	0.011706102117061\\
+%	3	0.0107098381070984\\
+%	4	0.011706102117061\\
+%	5	0.0134495641344956\\
+%	6	0.0164072229140722\\
+%	7	0.0194582814445828\\
+%	8	0.02593399750934\\
+%	9	0.0274906600249066\\
+%};
+%\addlegendentry{Three Users Case}
+
+\addplot [color=red, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=red, red}]
+table[row sep=crcr]{%
+	1	0.0135118306351183\\
+	2	0.00663138231631382\\
+	3	0.00482565379825654\\
+	4	0.00672478206724782\\
+	5	0.00853051058530511\\
+	6	0.00778331257783313\\
+	7	0.011239103362391\\
+%	8	0.0139165628891656\\
+%	9	0.0209526774595268\\
+};
+\addlegendentry{Three Users Case}
+
+
+\addplot [color=green, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=green, green}]
+table[row sep=crcr]{%
+	1	0.0167315175097276\\
+	2	0.00885214007782101\\
+	3	0.00894941634241245\\
+	4	0.00843060959792477\\
+	5	0.0101491569390402\\
+	6	0.012905317769131\\
+	7	0.015337224383917\\
+%	8	0.0246757457846952\\
+%	9	0.0309014267185473\\
+};
+\addlegendentry{Four Users Case}
+
+%\addplot [color=blue, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+%table[row sep=crcr]{%
+%	1	0.0142023346303502\\
+%	2	0.00713359273670558\\
+%	3	0.0075875486381323\\
+%	4	0.00781452658884565\\
+%	5	0.00894941634241245\\
+%	6	0.0100194552529183\\
+%	7	0.0124513618677043\\
+%	8	0.0159533073929961\\
+%	9	0.0207846952010376\\
+%};
+%\addlegendentry{Imperfect CSI}
+
+%\addplot [color=red, line width=3.0pt, mark size=2.0pt, mark=*, mark options={solid, fill=red, red}]
+%  table[row sep=crcr]{%
+%1	0.000707290533188248\\
+%2	0.000761697497279652\\
+%3	0.000788900979325354\\
+%4	0.00073449401523395\\
+%5	0.000870511425462459\\
+%6	0.000598476605005441\\
+%7	0.000571273122959739\\
+%8	0.000544069640914037\\
+%9	0.000924918389553863\\
+%};
+%\addlegendentry{Perfect CSI}
+
+\end{axis}
+
+\begin{axis}[%
+width=19.271in,
+height=10.01in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left
+]
+\end{axis}
+\end{tikzpicture}%
+\end{document}

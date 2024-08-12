@@ -1,0 +1,227 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=-10,
+xmax=20,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR [dB]},
+ymode=log,
+ymin=1e-05,
+ymax=1,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BER},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+grid style={line width=0.3pt, draw=gray!20},
+legend style={legend pos=south west, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, line width=2.0pt, mark size=1.5pt, mark=square*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+-10	0.28645266594124\\
+-8	0.247796517954298\\
+-6	0.200489662676823\\
+-4	0.156147986942329\\
+-2	0.113275299238302\\
+0	0.0742927094668118\\
+2	0.0449945593035909\\
+4	0.022714907508161\\
+6	0.00992927094668117\\
+8	0.00342763873775843\\
+10	0.00136017410228509\\
+12	0.000244831338411317\\
+14	2.72034820457019e-05\\
+16	0\\
+18	0\\
+20	0\\
+};
+\addlegendentry{One User Case: Imperfect CSI}
+
+\addplot [color=blue, line width=2.0pt, dashed, mark size=1.5pt, mark=*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+-10	0.28664309031556\\
+-8	0.247361262241567\\
+-6	0.200244831338411\\
+-4	0.1560119695321\\
+-2	0.112078346028292\\
+0	0.0730413492927095\\
+2	0.0441784548422198\\
+4	0.0217083786724701\\
+6	0.00889553862894451\\
+8	0.0028835690968444\\
+10	0.000843307943416757\\
+12	5.44069640914037e-05\\
+14	0\\
+16	0\\
+18	0\\
+20	0\\
+};
+\addlegendentry{One User Case: Perfect CSI}
+
+\addplot [color=black, line width=2.0pt, mark size=1.5pt, mark=square*, mark options={solid, fill=black, black}]
+  table[row sep=crcr]{%
+-10	0.278418308227115\\
+-8	0.238470451911935\\
+-6	0.194959443800695\\
+-4	0.153621089223638\\
+-2	0.112224797219003\\
+0	0.0770857473928158\\
+2	0.0469293163383546\\
+4	0.0253186558516802\\
+6	0.0150926998841251\\
+8	0.00814020857473928\\
+10	0.00460602549246813\\
+12	0.00295480880648899\\
+14	0.00272305909617613\\
+16	0.00214368482039397\\
+18	0.00170915411355736\\
+20	0.00165121668597914\\
+};
+\addlegendentry{Two Users Case: Imperfect CSI}
+
+\addplot [color=black, line width=2.0pt, dashed, mark size=1.5pt, mark=*, mark options={solid, fill=black, black}]
+  table[row sep=crcr]{%
+-10	0.278128621089224\\
+-8	0.237630359212051\\
+-6	0.194206257242178\\
+-4	0.152230590961761\\
+-2	0.111964078794902\\
+0	0.0755214368482039\\
+2	0.045422943221321\\
+4	0.0241019698725377\\
+6	0.0138760139049826\\
+8	0.00692352259559676\\
+10	0.0040845886442642\\
+12	0.00208574739281576\\
+14	0.00231749710312862\\
+16	0.00168018539976825\\
+18	0.00127462340672074\\
+20	0.000869061413673233\\
+};
+\addlegendentry{Two Users Case: Perfect CSI}
+
+\addplot [color=red, line width=2.0pt, mark size=1.5pt, mark=square*, mark options={solid, fill=red, red}]
+  table[row sep=crcr]{%
+-10	0.296046077210461\\
+-8	0.25607098381071\\
+-6	0.214788293897883\\
+-4	0.171450809464508\\
+-2	0.131351183063512\\
+0	0.0940535491905355\\
+2	0.0616749688667497\\
+4	0.0397260273972603\\
+6	0.0241905354919054\\
+8	0.0161270236612702\\
+10	0.00965130759651308\\
+12	0.00638231631382316\\
+14	0.00448318804483188\\
+16	0.00280199252801993\\
+18	0.00317559153175592\\
+20	0.0024906600249066\\
+};
+\addlegendentry{Three Users Case: Imperfect CSI}
+
+\addplot [color=red, line width=2.0pt, dashed, mark size=1.5pt, mark=*, mark options={solid, fill=red, red}]
+  table[row sep=crcr]{%
+-10	0.296170610211706\\
+-8	0.255728518057285\\
+-6	0.2140099626401\\
+-4	0.169738480697385\\
+-2	0.129825653798257\\
+0	0.0923412204234122\\
+2	0.0600560398505604\\
+4	0.0386052303860523\\
+6	0.0231631382316314\\
+8	0.0144458281444583\\
+10	0.00899750933997509\\
+12	0.00529265255292653\\
+14	0.00320672478206725\\
+16	0.00180572851805729\\
+18	0.00165006226650062\\
+20	0.00108966376089664\\
+};
+\addlegendentry{Three Users Case: Perfect CSI}
+
+\addplot [color=green, line width=2.0pt, mark size=1.5pt, mark=square*, mark options={solid, fill=green, green}]
+table[row sep=crcr]{%
+	-10	0.292996108949416\\
+	-8	0.256225680933852\\
+	-6	0.213975356679637\\
+	-4	0.170330739299611\\
+	-2	0.13651102464332\\
+	0	0.0998054474708171\\
+	2	0.0661154345006485\\
+	4	0.0469844357976654\\
+	6	0.0324254215304799\\
+	8	0.0180285343709468\\
+	10	0.0115758754863813\\
+	12	0.00946822308690013\\
+	14	0.00667963683527886\\
+	16	0.00512321660181582\\
+	18	0.00411802853437095\\
+	20	0.00382619974059663\\
+};
+\addlegendentry{Four Users Case: Imperfect CSI}
+
+\addplot [color=green, line width=2.0pt, dashed, mark size=1.5pt, mark=*, mark options={solid, fill=green, green}]
+table[row sep=crcr]{%
+	-10	0.292444876783398\\
+	-8	0.256225680933852\\
+	-6	0.214364461738003\\
+	-4	0.170071335927367\\
+	-2	0.134760051880674\\
+	0	0.0990596627756161\\
+	2	0.0666018158236057\\
+	4	0.0458495460440986\\
+	6	0.0302204928664073\\
+	8	0.0165369649805447\\
+	10	0.0107003891050584\\
+	12	0.00736057068741894\\
+	14	0.0049935149156939\\
+	16	0.00291828793774319\\
+	18	0.00152399481193256\\
+	20	0.00100518806744488\\
+};
+\addlegendentry{Four Users Case: Perfect CSI}
+
+
+
+\end{axis}
+
+\begin{axis}[%
+width=5.833in,
+height=4.375in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left
+]
+\end{axis}
+\end{tikzpicture}%
+
+\end{document}

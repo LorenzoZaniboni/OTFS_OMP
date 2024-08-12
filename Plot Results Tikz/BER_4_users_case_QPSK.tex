@@ -1,0 +1,73 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=-10,
+xmax=20,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR [dB]},
+ymode=log,
+ymin=0.001,
+ymax=1,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BER},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+-10	0.292996108949416\\
+-8	0.256225680933852\\
+-6	0.213975356679637\\
+-4	0.170330739299611\\
+-2	0.13651102464332\\
+0	0.0998054474708171\\
+2	0.0661154345006485\\
+4	0.0469844357976654\\
+6	0.0324254215304799\\
+8	0.0180285343709468\\
+10	0.0115758754863813\\
+12	0.00946822308690013\\
+14	0.00667963683527886\\
+16	0.00512321660181582\\
+18	0.00411802853437095\\
+20	0.00382619974059663\\
+};
+\addlegendentry{Four Users Case: Imperfect CSI}
+
+\addplot [color=red, line width=3.0pt, mark size=2.0pt, mark=*, mark options={solid, fill=red, red}]
+  table[row sep=crcr]{%
+-10	0.292444876783398\\
+-8	0.256225680933852\\
+-6	0.214364461738003\\
+-4	0.170071335927367\\
+-2	0.134760051880674\\
+0	0.0990596627756161\\
+2	0.0666018158236057\\
+4	0.0458495460440986\\
+6	0.0302204928664073\\
+8	0.0165369649805447\\
+10	0.0107003891050584\\
+12	0.00736057068741894\\
+14	0.0049935149156939\\
+16	0.00291828793774319\\
+18	0.00152399481193256\\
+20	0.00100518806744488\\
+};
+\addlegendentry{Four Users Case: Perfect CSI}
+
+\end{axis}
+\end{tikzpicture}%

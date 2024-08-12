@@ -1,6 +1,6 @@
 clc; clear all; close all;
 addpath(pwd + "/utils");
-SNRdB = 10;
+SNRdB = 15;
 SNR = 10.^(SNRdB/10);
 M = 32; l_max = 8; % l_max is the maximum delay 
 N = 32; k_max = 4; % k_max is the maximum Doppler

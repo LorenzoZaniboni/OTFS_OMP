@@ -1,0 +1,89 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=-10,
+xmax=20,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR [dB]},
+ymode=log,
+ymin=0.000869061413673233,
+ymax=1,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BER},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+-10	0.278418308227115\\
+-8	0.238470451911935\\
+-6	0.194959443800695\\
+-4	0.153621089223638\\
+-2	0.112224797219003\\
+0	0.0770857473928158\\
+2	0.0469293163383546\\
+4	0.0253186558516802\\
+6	0.0150926998841251\\
+8	0.00814020857473928\\
+10	0.00460602549246813\\
+12	0.00295480880648899\\
+14	0.00272305909617613\\
+16	0.00214368482039397\\
+18	0.00170915411355736\\
+20	0.00165121668597914\\
+};
+\addlegendentry{Imperfect CSI}
+
+\addplot [color=red, line width=3.0pt, mark size=2.0pt, mark=*, mark options={solid, fill=red, red}]
+  table[row sep=crcr]{%
+-10	0.278128621089224\\
+-8	0.237630359212051\\
+-6	0.194206257242178\\
+-4	0.152230590961761\\
+-2	0.111964078794902\\
+0	0.0755214368482039\\
+2	0.045422943221321\\
+4	0.0241019698725377\\
+6	0.0138760139049826\\
+8	0.00692352259559676\\
+10	0.0040845886442642\\
+12	0.00208574739281576\\
+14	0.00231749710312862\\
+16	0.00168018539976825\\
+18	0.00127462340672074\\
+20	0.000869061413673233\\
+};
+\addlegendentry{Perfect CSI}
+
+\end{axis}
+
+\begin{axis}[%
+width=5.833in,
+height=4.375in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left
+]
+\end{axis}
+\end{tikzpicture}%

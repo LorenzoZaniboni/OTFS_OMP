@@ -1,0 +1,59 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=9,
+xlabel style={font=\color{white!15!black}},
+xlabel={Threshold},
+ymode=log,
+ymin=0.00233463035019455,
+ymax=0.0309014267185473,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BER},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue, line width=3.0pt, mark size=1.4pt, mark=square*, mark options={solid, fill=blue, blue}]
+  table[row sep=crcr]{%
+1	0.0167315175097276\\
+2	0.00885214007782101\\
+3	0.00894941634241245\\
+4	0.00843060959792477\\
+5	0.0101491569390402\\
+6	0.012905317769131\\
+7	0.015337224383917\\
+8	0.0246757457846952\\
+9	0.0309014267185473\\
+};
+\addlegendentry{Imperfect CSI}
+
+\addplot [color=red, line width=3.0pt, mark size=2.0pt, mark=*, mark options={solid, fill=red, red}]
+  table[row sep=crcr]{%
+1	0.00317769130998703\\
+2	0.00272373540856031\\
+3	0.00233463035019455\\
+4	0.00262645914396887\\
+5	0.00272373540856031\\
+6	0.00398832684824903\\
+7	0.00350194552529183\\
+8	0.00350194552529183\\
+9	0.00243190661478599\\
+};
+\addlegendentry{Perfect CSI}
+
+\end{axis}
+\end{tikzpicture}%
